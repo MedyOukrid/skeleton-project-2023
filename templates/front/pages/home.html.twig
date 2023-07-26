@@ -1,0 +1,19 @@
+{% extends 'front/base.html.twig' %}
+
+{% block title %}
+</h1>
+<h1>Cars Sellers
+{% endblock %}
+{% block body %}
+	<div class="card-game-container row">
+
+			<div class="row">
+				{% for listing in listings %}
+					{% include 'front/partial/_listing_card.html.twig' with{
+            'listing': listing,
+            }
+          %}
+				</div>
+			{% endfor %}
+		</div>
+	{% endblock %}

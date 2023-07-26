@@ -1,0 +1,14 @@
+{% extends 'front/base.html.twig' %}
+
+{% block body %}
+   <h1> {{ onelisting.title }}</h1>
+   <div class="row">
+   <img src="{{ onelisting.image}}">
+      <p>Price : {{onelisting.price}}€</p>
+      <p>Kmh :{{onelisting.mileage}}MH</p>
+   </div>
+   <div class ="row">
+   <p>{{onelisting.description}}</p>
+   </div>
+ 
+   {% endblock %}
